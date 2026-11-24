@@ -23,6 +23,8 @@ app_replacements["ppsspp-nx2"]='PPSSPP-Replace' # special case
 app_replacements["eden-switch2-poc"]='eden'
 app_replacements["pkforge-switch2"]='pkforge'
 
+version_replacements["pkforge-switch2"]='pkforge'
+
 IZSTORE3
 info["vacootube"]='VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.'
 info["blitbun"]='BlitBun	IZMYSH	Tools	Stream PC video and audio to Switch 2. Requires BlitBun on a Linux PC and an active IZ2S connection.'
@@ -62,8 +64,7 @@ info["kairadio"]='KaiRadio	mizuiroame	Media	Internet radio player for Switch 2 u
 info["abreloaded"]='Angry Birds Reloaded wrapper	githubuser77777 / aks796	Games	Native Android compatibility wrapper for Angry Birds Reloaded 2.2.16218. Requires your own APK libraries, assets and cursor images in /switch/abreloaded, plus kaiHEN ldr:ro support. This download installs only the wrapper; follow the repository setup guide.'
 info["nxengine-evo"]='NXEngine-evo (Switch 2)	ya-v-ia / NXEngine-evo contributors	Games	Switch 2 port of the open-source NXEngine-evo engine for Cave Story. This entry uses the Ounce build. Follow the repository for game resources and controls; user data is stored relative to the NRO location.'
 info["super-moonlight-nx2"]='Super Moonlight NX2	davidkalil10 / Azkali	Media	Stream PC games from Sunshine over LAN or the built-in Tailscale tunnel. Requires a Sunshine host and kaiHEN 20261114c or newer. Select H.264 in Settings before streaming; the release notes report an AV1 startup issue.'
-info["game-vault"]='Game Vault	flex36ty / Game Vault contributors	Tools	Game and save backup, restore and file transfer utility for Switch 2. Requires the separately installed compatible kaiHEN fsipc-v1 runtime and SD helpers. This download updates only the app; follow the upstream runtime guide. Full backup/restore verification is still pending upstream.
-repository	https://github.com/flex36ty/switch2-gamevault'
+info["game-vault"]='Game Vault	flex36ty / Game Vault contributors	Tools	Game and save backup, restore and file transfer utility for Switch 2. Requires the separately installed compatible kaiHEN fsipc-v1 runtime and SD helpers. This download updates only the app; follow the upstream runtime guide. Full backup/restore verification is still pending upstream.'
 info["punktfunk"]='PunktFunk	d0vere / punktfunk contributors	Media	Stream PC games to Switch 2 over your home network. Requires the punktfunk host on your PC, kaiHEN and full application memory. Handheld mode is recommended by the port author; pair with the PIN shown by your host.'
 info["kaidump"]='KaiDump	BlafKing	Tools	Export your installed games, updates, DLC, ExeFS and RomFS to SD, FTP or USB. Requires kaiHEN 20261117b or newer and sufficient storage. Experimental; read the repository requirements before use.
 repository	https://github.com/BlafKing/KaiDump'
@@ -129,6 +130,16 @@ if [[ -f "${destination}" ]]; then
 else
 	echo "a file failed to download ${github} stopping execution"; exit
 fi
+
+if [[ -f "${name,,}" ]]; then echo "error"; exit; fi
+if [[ -f "${extension}" ]]; then echo "error"; exit; fi
+if [[ -f "${version}" ]]; then echo "error"; exit; fi
+if [[ -f "${repository}" ]]; then echo "error"; exit; fi
+if [[ -f "${bytes}" ]]; then echo "error"; exit; fi
+if [[ -f "${sha256sum}" ]]; then echo "error"; exit; fi
+if [[ -f "${file}" ]]; then echo "error"; exit; fi
+if [[ -f "${github}" ]]; then echo "error"; exit; fi
+
 echo
 #printf "my version:
 printf "app	${name,,}	${extension}	${version}	${information}
@@ -136,7 +147,7 @@ repository	${repository}
 file	${bytes}	${sha256sum}	${file}
 github	${github}"
 printf "
-app	${name,,}	${extension}	${version}	${name}	${dev}	${information}
+app	${name,,}	${extension}	${version}	${information}
 repository	${repository}
 file	${bytes}	${sha256sum}	${file}
 github	${github}" >> catalog-new-temp.tsv
