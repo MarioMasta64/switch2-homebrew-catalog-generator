@@ -138,7 +138,6 @@ file	13822737	732efef01dae852adfffe2dfee9f027deaa38f2a3167501b1ca53654aef98328	l
 github	https://github.com/davidkalil10/super-moonlight-nx2/releases/download/v1.0.0/super-moonlight-nx2.nro
 app	game-vault	nro	0.4.5	game-vault	flex36ty	Game Vault	flex36ty / Game Vault contributors	Tools	Game and save backup, restore and file transfer utility for Switch 2. Requires the separately installed compatible kaiHEN fsipc-v1 runtime and SD helpers. This download updates only the app; follow the upstream runtime guide. Full backup/restore verification is still pending upstream.
 repository	https://github.com/flex36ty/switch2-gamevault
-repository	https://github.com/flex36ty/switch2-gamevault
 file	2289863	d52106c5881a298ad72c2a8e5b62d7a0259204d19d3a8ddcaceedb58c66f2f43	launcher.nro
 github	https://github.com/flex36ty/switch2-gamevault/releases/download/v0.4.5/game-vault-v045.nro
 app	punktfunk	nro	0.1.0	punktfunk	d0vere	PunktFunk	d0vere / punktfunk contributors	Media	Stream PC games to Switch 2 over your home network. Requires the punktfunk host on your PC, kaiHEN and full application memory. Handheld mode is recommended by the port author; pair with the PIN shown by your host.
