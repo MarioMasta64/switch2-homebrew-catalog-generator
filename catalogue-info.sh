@@ -129,6 +129,15 @@ else
 	echo "a file failed to download ${github} stopping execution"; exit
 fi
 
+if [[ "${name,,}" == "cemu-nx2" ]]; then
+printf "
+app	izpsx	iza	0.5.2	IZPSX	IZMYSH	Emulators	Play your PlayStation games on Switch 2. Requires IZ2S and your own BIOS and game files.
+repository	https://github.com/byizmysh/IZPSX-emulator
+file	160696	bc3054dc595fa9d99eba9badd2304f8a1536636b42acd7b70b428fdc97b3f0d0	launcher.iza
+file	1746048	b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db	asset-b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db.izdata
+github	https://github.com/byizmysh/IZPSX-emulator/releases/download/v0.5.2/launcher.iza" >> catalog-new-temp.tsv
+fi
+
 if [[ -f "${name,,}" ]]; then echo "error"; exit; fi
 if [[ -f "${extension}" ]]; then echo "error"; exit; fi
 if [[ -f "${version}" ]]; then echo "error"; exit; fi
@@ -159,15 +168,7 @@ github	${github}" >> catalog-new-temp.tsv
 #"
 
 }
-printf "IZSTORE3" > catalog-new-temp.tsv
-while IFS= read -r github; do
-    execute
-done < "urls.txt"
-
-printf "
-i dont have a good way to automate iza stuff becauze of the extra izdata so just modify it manually down here
-"
-printf "
+printf "IZSTORE3
 app	vacootube	iza	1.5.7	VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.
 repository	https://github.com/byizmysh/VacooTube
 file	509940	2291046770bc487b16b20704196de6bb961150c16209132268a7faf9a6cb39c2	launcher.iza
@@ -180,9 +181,10 @@ app	iz2s-cheese	iza	0.8.1	IZ2S Cheese	IZMYSH	Tools	Browse and install Switch 2 h
 repository	https://github.com/byizmysh/iz2s-cheese
 file	821884	7239f9545677ee1c887f7ea1e32dc83c381e2bbc4848c640fee38078675c0386	launcher.iza
 file	95408	e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293	asset-e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293.izdata
-github	https://github.com/byizmysh/iz2s-cheese/releases/download/v0.8.1/iz2s-cheese.iza
-app	izpsx	iza	0.5.2	IZPSX	IZMYSH	Emulators	Play your PlayStation games on Switch 2. Requires IZ2S and your own BIOS and game files.
-repository	https://github.com/byizmysh/IZPSX-emulator
-file	160696	bc3054dc595fa9d99eba9badd2304f8a1536636b42acd7b70b428fdc97b3f0d0	launcher.iza
-file	1746048	b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db	asset-b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db.izdata
-github	https://github.com/byizmysh/IZPSX-emulator/releases/download/v0.5.2/launcher.iza" >> catalog-new-temp.tsv
+github	https://github.com/byizmysh/iz2s-cheese/releases/download/v0.8.1/iz2s-cheese.iza" > catalog-new-temp.tsv
+while IFS= read -r github; do
+    execute
+done < "urls.txt"
+
+printf "
+i dont have a good way to automate iza stuff becauze of the extra izdata so just modify it manually down here
