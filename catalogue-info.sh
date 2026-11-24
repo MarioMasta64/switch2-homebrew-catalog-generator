@@ -84,6 +84,9 @@ info["ns2-fwftp"]='NS2 Firmware Dumper FTP	onijuiku-rgb	Tools	A kaiHEN homebrew 
 info["ouncesx2"]='OunceSX2	nyathea	Emulators	OunceSX2 is a free and open-source PlayStation 2 (PS2) emulator based on PCSX2. Its purpose is to emulate the PS2s hardware, using a combination of MIPS CPU Interpreters, Recompilers and a Virtual Machine which manages hardware states and PS2 system memory.'
 info["switch2iptv"]='IPTV Player	davidkalil10	Media	IPTV player for Nintendo Switch 2 (kaiHEN/ounce-hbmenu), adapted from the original gomprime/switchiptv project, written in C++ with borealis (native UI with controller navigation) and mpv/FFmpeg for playback.'
 info["netsurf-switch2"]='NetSurf	davidkalil10	Tools	A port of the NetSurf browser engine to Nintendo Switch 2 (ounce-devkit / libounce + OunceVK) and Nintendo Switch 1 (devkitA64 / libnx). Verified rendering real sites over HTTPS on hardware.'
+info["seedswap"]='SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.'
+info["switch2homebrew-store"]='Switch 2 Homebrew Store	coldbreathAI	Tools	Native homebrew catalog and store for Nintendo Switch 2.'
+info["kaivideo"]='KaiVideo	mizuiroame	Media	An open-source video player for Switch 2 running kaiHEN. It plays the videos on your microSD card, in a shared folder on your network (Windows, a NAS, Samba or WebDAV), or on your own Jellyfin, Emby or Plex server. It shows them as a library of films and series, and decodes them with the consoles own hardware decoder. Its a sibling of KaiPlayer and KaiRadio.'
 
 
 
@@ -194,4 +197,4 @@ while IFS= read -r github; do
 done < "urls.txt"
 
 printf "
-i dont have a good way to automate iza stuff becauze of the extra izdata so just modify it manually down here
+i dont have a good way to automate iza stuff becauze of the extra izdata so just modify it manually down here"
