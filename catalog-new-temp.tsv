@@ -209,10 +209,6 @@ app	ouncecord	nro	1-beta	OunceCord	nyathea	Media	Experimental third-party Discor
 repository	https://github.com/nyathea/OunceCord
 file	20947058	fd964ad6edcf075a0b5a22338caa181365379089ebe3513cc8d0260afe85ce60	launcher.nro
 github	https://github.com/nyathea/OunceCord/releases/download/v1-beta/OunceCord.nro
-app	gamepad-media-center-aggregator	nro	1.5.0	GMCA	thcolin	Tools	GMCA is one native, controller-first client. Point it at any media center - Plex, Jellyfin, Emby or Stremio - and run it on any device you left in a drawer: Nintendo Switch, Nintendo Switch 2 (beta), PS Vita or a Raspberry Pi wired to the TV. The interface never changes; only the accent colour and the tabs follow your server. Also runs on Windows, macOS, Linux and PS4.
-repository	https://github.com/thcolin/gamepad-media-center-aggregator
-file	30812313	4e928bedca363b31d8a38a37b6501e24807b30a5876999fc64005714cffefbb5	launcher.nro
-github	https://github.com/thcolin/gamepad-media-center-aggregator/releases/download/v1.5.0/GMCA.nro
 app	ns2-fwftp	nro	1.2.0	NS2 Firmware Dumper FTP	onijuiku-rgb	Tools	A kaiHEN homebrew app (NRO) that serves your Switch 2s installed system firmware (every system program and system data title) over read-only FTP on port 1337, so you can copy it to a PC.
 repository	https://github.com/onijuiku-rgb/NS2-FWFTP
 file	425086	c6f620e00a3859da0203de6a4f59016b5f7258052cee83b80ccdd109f0f2a66d	launcher.nro
