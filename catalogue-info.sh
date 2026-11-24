@@ -123,8 +123,12 @@ if [[ ! -f "${versionfile}" ]]; then
     wget -q "${github}" -O "${destination}"
     echo "" > ${versionfile}
 fi
-bytes=$(wc -c "${destination}" | cut -f1 -d' ')
-sha256sum=$(sha256sum "${destination}") && sha256sum=${sha256sum%% *}
+if [[ -f "${destination}" ]]; then
+	bytes=$(wc -c "${destination}" | cut -f1 -d' ')
+	sha256sum=$(sha256sum "${destination}") && sha256sum=${sha256sum%% *}
+else
+	echo "a file failed to download ${github} stopping execution"; exit
+fi
 echo
 #printf "my version:
 printf "app	${name,,}	${extension}	${version}	${information}
