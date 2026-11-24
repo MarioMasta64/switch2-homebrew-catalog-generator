@@ -79,6 +79,13 @@ info["chromium-nx"]='Chromium NX (Switch 2)	shodowlo	Tools	Experimental Chromium
 info["ouncecord"]='OunceCord	nyathea	Media	Experimental third-party Discord client for Switch 2 under kaiHEN. Supports sign-in with 2FA, messages, reactions and console capture sharing. Requires a Discord account and network access. Upstream warns that third-party clients conflict with Discords terms and may put accounts at risk.'
 
 
+info["gamepad-media-center-aggregator"]='GMCA	thcolin	Tools	GMCA is one native, controller-first client. Point it at any media center - Plex, Jellyfin, Emby or Stremio - and run it on any device you left in a drawer: Nintendo Switch, Nintendo Switch 2 (beta), PS Vita or a Raspberry Pi wired to the TV. The interface never changes; only the accent colour and the tabs follow your server. Also runs on Windows, macOS, Linux and PS4.'
+info["ns2-fwftp"]='NS2 Firmware Dumper FTP	onijuiku-rgb	Tools	A kaiHEN homebrew app (NRO) that serves your Switch 2s installed system firmware (every system program and system data title) over read-only FTP on port 1337, so you can copy it to a PC.'
+info["ouncesx2"]='OunceSX2	nyathea	Emulators	OunceSX2 is a free and open-source PlayStation 2 (PS2) emulator based on PCSX2. Its purpose is to emulate the PS2s hardware, using a combination of MIPS CPU Interpreters, Recompilers and a Virtual Machine which manages hardware states and PS2 system memory.'
+info["switch2iptv"]='IPTV Player	davidkalil10	Media	IPTV player for Nintendo Switch 2 (kaiHEN/ounce-hbmenu), adapted from the original gomprime/switchiptv project, written in C++ with borealis (native UI with controller navigation) and mpv/FFmpeg for playback.'
+info["netsurf-switch2"]='NetSurf	davidkalil10	Tools	A port of the NetSurf browser engine to Nintendo Switch 2 (ounce-devkit / libounce + OunceVK) and Nintendo Switch 1 (devkitA64 / libnx). Verified rendering real sites over HTTPS on hardware.'
+
+
 
 execute() {
 echo
