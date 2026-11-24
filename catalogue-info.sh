@@ -48,8 +48,7 @@ info["nces"]='Nic Cage Eats Stuff	PennyLoafer / Cart1416	Games	Switch 2 port of 
 info["bad-apple"]='Bad Apple!	souldbminerr	Media	Bad Apple audiovisual demo, using the dedicated Ounce build for Switch 2. This is the Switch 2 release, not the separate Switch 1 binary.'
 info["izpsx"]='IZPSX	IZMYSH	Emulators	Play your PlayStation games on Switch 2. Requires IZ2S and your own BIOS and game files.'
 info["cemu-nx2"]='Cemu-NX2	TheAJLive / Cemu team	Emulators	Wii U emulator for Switch 2 under kaiHEN. Requires your own games and about 5.5 GiB of homebrew heap. USB drives and SaltyNX are not supported.'
-info["dekopon"]='Dekopon for Switch 2	Olmectron / Dekopon contributors	Emulators	Nintendo 3DS emulator, using the Switch 2 port by Olmectron. Supply your own games. Shader caches rebuild after updating; asynchronous shader compilation is experimental.
-repository	https://github.com/Olmectron/dekopon'
+info["dekopon"]='Dekopon for Switch 2	Olmectron / Dekopon contributors	Emulators	Nintendo 3DS emulator, using the Switch 2 port by Olmectron. Supply your own games. Shader caches rebuild after updating; asynchronous shader compilation is experimental.'
 info["sw2transfer"]='SW2Transfer	Rodpad	Tools	Multi-connection file transfer and file management server for Switch 2. Use the upstream sw2xfer.py client on your PC; see the repository for setup.'
 info["moader"]='Moader	H644b	Tools	Mod manager with console and browser interfaces. Requires a compatible Moader resident backend and matched patched HEN, installed separately. This download installs the console app only; follow the repository installation guide.'
 info["brewstore"]='Brewstore	HerXayah	Tools	Homebrew catalog and downloader for Switch 2. Requires the upstream hbmenu/brewloader setup. This download installs brewstore.nro only; follow the repository instructions for the remaining setup.'
@@ -66,8 +65,7 @@ info["nxengine-evo"]='NXEngine-evo (Switch 2)	ya-v-ia / NXEngine-evo contributor
 info["super-moonlight-nx2"]='Super Moonlight NX2	davidkalil10 / Azkali	Media	Stream PC games from Sunshine over LAN or the built-in Tailscale tunnel. Requires a Sunshine host and kaiHEN 20261114c or newer. Select H.264 in Settings before streaming; the release notes report an AV1 startup issue.'
 info["game-vault"]='Game Vault	flex36ty / Game Vault contributors	Tools	Game and save backup, restore and file transfer utility for Switch 2. Requires the separately installed compatible kaiHEN fsipc-v1 runtime and SD helpers. This download updates only the app; follow the upstream runtime guide. Full backup/restore verification is still pending upstream.'
 info["punktfunk"]='PunktFunk	d0vere / punktfunk contributors	Media	Stream PC games to Switch 2 over your home network. Requires the punktfunk host on your PC, kaiHEN and full application memory. Handheld mode is recommended by the port author; pair with the PIN shown by your host.'
-info["kaidump"]='KaiDump	BlafKing	Tools	Export your installed games, updates, DLC, ExeFS and RomFS to SD, FTP or USB. Requires kaiHEN 20261117b or newer and sufficient storage. Experimental; read the repository requirements before use.
-repository	https://github.com/BlafKing/KaiDump'
+info["kaidump"]='KaiDump	BlafKing	Tools	Export your installed games, updates, DLC, ExeFS and RomFS to SD, FTP or USB. Requires kaiHEN 20261117b or newer and sufficient storage. Experimental; read the repository requirements before use.'
 info["ppsspp-davidkalil"]='PPSSPP (davidkalil10)	davidkalil10 / PPSSPP contributors	Emulators	PSP emulator port for Switch 2 with Vulkan and kaiHEN JIT. Supply your own games and launch with full application memory. This is davidkalil10s fork; the separate XITRIX fork adds experimental GameShare. Optional frame generation needs your own Lossless.dll.'
 info["ppsspp-xitrix"]='PPSSPP (XITRIX GameShare)	XITRIX / PPSSPP contributors	Emulators	Separate PPSSPP port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSP games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.'
 info["sw2ps2"]='SW2PS2	Rodpad / OunceSX2 contributors	Emulators	Early PlayStation 2 emulator for Switch 2 under kaiHEN, based on OunceSX2. Supply your own BIOS in /bios/ps2 and game dumps in /roms/ps2, or configure other folders. Includes per-game settings, save states and experimental Multitap support.'
@@ -142,7 +140,8 @@ if [[ -f "${github}" ]]; then echo "error"; exit; fi
 
 echo
 #printf "my version:
-printf "app	${name,,}	${extension}	${version}	${information}
+printf "
+app	${name,,}	${extension}	${version}	${information}
 repository	${repository}
 file	${bytes}	${sha256sum}	${file}
 github	${github}"

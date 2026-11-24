@@ -77,7 +77,6 @@ file	89892006	2e3faff528d0928bf48c5bd48743d62c31e58a45dd4d5b8fe080804a2c81643d	l
 github	https://github.com/TheAJLive/Cemu-NX2/releases/download/v1.4.1/cemu-switch2.nro
 app	dekopon	nro	0.9.1	Dekopon for Switch 2	Olmectron / Dekopon contributors	Emulators	Nintendo 3DS emulator, using the Switch 2 port by Olmectron. Supply your own games. Shader caches rebuild after updating; asynchronous shader compilation is experimental.
 repository	https://github.com/Olmectron/dekopon
-repository	https://github.com/Olmectron/dekopon
 file	32831532	7828ce82d466ade272260f1351dd7a9f82e64e9e51f409782280e73c413ced9c	launcher.nro
 github	https://github.com/Olmectron/dekopon/releases/download/v0.9.1/dekopon.nro
 app	sw2transfer	nro	2.0.0	SW2Transfer	Rodpad	Tools	Multi-connection file transfer and file management server for Switch 2. Use the upstream sw2xfer.py client on your PC; see the repository for setup.
@@ -145,7 +144,6 @@ repository	https://github.com/d0vere/punktfunk-client-switch2
 file	41140096	7f8a533dd07cdd7a338cd0b1612982ccb4819d03cee1c7664349a030b2c28457	launcher.nro
 github	https://github.com/d0vere/punktfunk-client-switch2/releases/download/v0.1.0/punktfunk-switch2.nro
 app	kaidump	nro	1.0.5	KaiDump	BlafKing	Tools	Export your installed games, updates, DLC, ExeFS and RomFS to SD, FTP or USB. Requires kaiHEN 20261117b or newer and sufficient storage. Experimental; read the repository requirements before use.
-repository	https://github.com/BlafKing/KaiDump
 repository	https://github.com/BlafKing/KaiDump
 file	19828265	7bc870f90065c4ce5786b0ba11a0a5258bd6cd7189fe57ad0d67723740d5cff0	launcher.nro
 github	https://github.com/BlafKing/KaiDump/releases/download/1.0.5/KaiDump.nro
