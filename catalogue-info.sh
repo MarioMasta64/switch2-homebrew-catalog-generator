@@ -25,7 +25,6 @@ app_replacements["pkforge-switch2"]='pkforge'
 
 version_replacements["pkforge-switch2"]='pkforge'
 
-IZSTORE3
 info["vacootube"]='VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.'
 info["blitbun"]='BlitBun	IZMYSH	Tools	Stream PC video and audio to Switch 2. Requires BlitBun on a Linux PC and an active IZ2S connection.'
 info["iz2s-cheese"]='IZ2S Cheese	IZMYSH	Tools	Browse and install Switch 2 homebrew.'
@@ -87,9 +86,12 @@ info["netsurf-switch2"]='NetSurf	davidkalil10	Tools	A port of the NetSurf browse
 info["seedswap"]='SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.'
 info["switch2homebrew-store"]='Switch 2 Homebrew Store	coldbreathAI	Tools	Native homebrew catalog and store for Nintendo Switch 2.'
 info["kaivideo"]='KaiVideo	mizuiroame	Media	Video player for Switch 2 under kaiHEN: films and series from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your own Jellyfin, Emby or Plex server, with hardware H.264/VP9/AV1, downloads for offline viewing, Live TV, your own IPTV list and Stremio addons. Nothing is bundled; configuration is stored next to the application.'
-info["vita3k-nx"]='Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; This is distinct from davidkalil10s fork.'
-info["dolphin-nx"]='Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Separate Dolphin port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own Wii games; This is distinct from MegaCadeDevs fork.'
+info["vita3k-nx"]='Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Vita3K is an experimental PlayStation Vita emulator for Windows, Linux, macOS and Android.'
+info["dolphin-nx"]='Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Dolphin is an emulator for running GameCube and Wii games on Windows, Linux, macOS, and recent Android devices. Its licensed under the terms of the GNU General Public License, version 2 or later (GPLv2+).'
 info["kaireader"]='KaiReader	mizuiroame	Media	Book and comic reader for Switch 2 under kaiHEN: your DRM-free EPUB, PDF, CBZ, CBR, FB2, MOBI and TXT from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), plus public-domain books from Project Gutenberg and Standard Ebooks. Configuration is stored next to the application.'
+info["local-update-tool"]='Local Update Tool	AlexTech01	Tools	Homebrew tool for modded Switch 2s running kaiHEN to allow installing game updates from other consoles through "Match Version With Local Users" that would normally be rejected.'
+info["iztwins2"]='IZtwiNS2	IZMYSH	Media	IZtwiNS2 is a standalone Twitch client for Nintendo Switch 2. Browse live channels and categories, watch streams, videos and clips, and read or send Twitch chat from the console.'
+info["cemu-nx"]='Cemu-NX (GameShare)	NaGaa95	Emulators	IZtwiNS2 This fork runs Cemu on the Nintendo Switch and the Nintendo Switch 2 (kaiHEN).'
 
 
 
@@ -143,15 +145,6 @@ else
 fi
 if [[ "${bytes}" == "0" ]]; then echo "download failed, check link and try again"; exit; fi
 
-if [[ "${name,,}" == "cemu-nx2" ]]; then
-printf "
-app	izpsx	iza	0.5.2	IZPSX	IZMYSH	Emulators	Play your PlayStation games on Switch 2. Requires IZ2S and your own BIOS and game files.
-repository	https://github.com/byizmysh/IZPSX-emulator
-file	160696	bc3054dc595fa9d99eba9badd2304f8a1536636b42acd7b70b428fdc97b3f0d0	launcher.iza
-file	1746048	b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db	asset-b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db.izdata
-github	https://github.com/byizmysh/IZPSX-emulator/releases/download/v0.5.2/launcher.iza" >> catalog-new-temp.tsv
-fi
-
 if [[ -f "${name,,}" ]]; then echo "error"; exit; fi
 if [[ -f "${extension}" ]]; then echo "error"; exit; fi
 if [[ -f "${version}" ]]; then echo "error"; exit; fi
@@ -182,20 +175,7 @@ github	${github}" >> catalog-new-temp.tsv
 #"
 
 }
-printf "IZSTORE3
-app	vacootube	iza	1.5.7	VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.
-repository	https://github.com/byizmysh/VacooTube
-file	509940	2291046770bc487b16b20704196de6bb961150c16209132268a7faf9a6cb39c2	launcher.iza
-github	https://github.com/byizmysh/VacooTube/releases/download/v1.5.7/vacootube-1.5.7.iza
-app	blitbun	iza	1.15.8	BlitBun	IZMYSH	Tools	Stream PC video and audio to Switch 2. Requires BlitBun on a Linux PC and an active IZ2S connection.
-repository	https://github.com/byizmysh/BlitBun
-file	516376	d9457fe53d4b32456a20d6d418c9bf5300acaa3418e860175cc8f9db7199cbb3	launcher.iza
-github	https://github.com/byizmysh/BlitBun/releases/download/v1.15.8/blitbun-1.15.8.iza
-app	iz2s-cheese	iza	0.8.1	IZ2S Cheese	IZMYSH	Tools	Browse and install Switch 2 homebrew.
-repository	https://github.com/byizmysh/iz2s-cheese
-file	821884	7239f9545677ee1c887f7ea1e32dc83c381e2bbc4848c640fee38078675c0386	launcher.iza
-file	95408	e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293	asset-e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293.izdata
-github	https://github.com/byizmysh/iz2s-cheese/releases/download/v0.8.1/iz2s-cheese.iza" > catalog-new-temp.tsv
+printf "IZSTORE3" > catalog-new-temp.tsv
 while IFS= read -r github; do
     execute
 done < "urls.txt"

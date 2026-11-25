@@ -1,17 +1,4 @@
 IZSTORE3
-app	vacootube	iza	1.5.7	VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.
-repository	https://github.com/byizmysh/VacooTube
-file	509940	2291046770bc487b16b20704196de6bb961150c16209132268a7faf9a6cb39c2	launcher.iza
-github	https://github.com/byizmysh/VacooTube/releases/download/v1.5.7/vacootube-1.5.7.iza
-app	blitbun	iza	1.15.8	BlitBun	IZMYSH	Tools	Stream PC video and audio to Switch 2. Requires BlitBun on a Linux PC and an active IZ2S connection.
-repository	https://github.com/byizmysh/BlitBun
-file	516376	d9457fe53d4b32456a20d6d418c9bf5300acaa3418e860175cc8f9db7199cbb3	launcher.iza
-github	https://github.com/byizmysh/BlitBun/releases/download/v1.15.8/blitbun-1.15.8.iza
-app	iz2s-cheese	iza	0.8.1	IZ2S Cheese	IZMYSH	Tools	Browse and install Switch 2 homebrew.
-repository	https://github.com/byizmysh/iz2s-cheese
-file	821884	7239f9545677ee1c887f7ea1e32dc83c381e2bbc4848c640fee38078675c0386	launcher.iza
-file	95408	e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293	asset-e761d0d4cd8615032ef60cfc14a22da2c949028146943bc7c2625231ddf20293.izdata
-github	https://github.com/byizmysh/iz2s-cheese/releases/download/v0.8.1/iz2s-cheese.iza
 app	iz2s-cheese	nro	0.8.7	IZ2S Cheese	IZMYSH	Tools	Browse and install Switch 2 homebrew.
 repository	https://github.com/byizmysh/iz2s-cheese
 file	1279419	09d99bc8b935ec0618874f999d063fafb313f91c3cd8a84676e0eb9a7328aa80	launcher.nro
@@ -56,10 +43,6 @@ app	green-nx	nro	1.0.31pre1-switch2	Green-NX	davidkalil10 / atjike	Media	Cloud g
 repository	https://github.com/davidkalil10/green-nx_switch-2
 file	22575167	11bea13202099c530f1b4e7bc9a58300430e2de4e6b3d213af460639fe51d9c4	launcher.nro
 github	https://github.com/davidkalil10/green-nx_switch-2/releases/download/v1.0.31pre1-switch2/green-nx-switch2.nro
-app	dolphin	nro	1.0.0	Dolphin	MegaCadeDev / Dolphin team	Emulators	Early test port of Dolphin for Switch 2: GameCube and Wii emulation with Vulkan and JIT. Supply your own games. USB drives are not supported; performance and graphics vary by game.
-repository	https://github.com/MegaCadeDev/dolphin-nx2
-file	44676744	e0a502e6e43d67b0c7394d0ee649d7c0a07f8c9c4b55300042f0c8c761224de7	launcher.nro
-github	https://github.com/MegaCadeDev/dolphin-nx2/releases/download/v1.0.0/dolphin.nro
 app	mgba	nro	1.0.0	mGBA	jackspence7 / mGBA team	Emulators	Native mGBA port for Switch 2 homebrew. Play your own GBA games with sound, save states and screen modes. GB/GBC support is present but was not tested by the port author.
 repository	https://github.com/jackspence7/GBA-kaiHEN
 file	18192371	d36444da81498d6cae058745117f659a3cfb3d2fffb609bfbcf05a4a98c820ae	launcher.nro
@@ -84,11 +67,6 @@ app	bad-apple	nro	bad_apple_ounce	Bad Apple!	souldbminerr	Media	Bad Apple audiov
 repository	https://github.com/souldbminerr/bad-apple-switch
 file	59259489	8f097312ab4ebe073aa70edf6830a085255e8880bfa351befedb01321e6f9c02	launcher.nro
 github	https://github.com/souldbminerr/bad-apple-switch/releases/download/bad_apple_ounce/bad-apple-switch.nro
-app	izpsx	iza	0.5.2	IZPSX	IZMYSH	Emulators	Play your PlayStation games on Switch 2. Requires IZ2S and your own BIOS and game files.
-repository	https://github.com/byizmysh/IZPSX-emulator
-file	160696	bc3054dc595fa9d99eba9badd2304f8a1536636b42acd7b70b428fdc97b3f0d0	launcher.iza
-file	1746048	b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db	asset-b87343c59604a1ffc497ec852e7fc80beb65cf92b6e208124528a4a39b6fb8db.izdata
-github	https://github.com/byizmysh/IZPSX-emulator/releases/download/v0.5.2/launcher.iza
 app	cemu-nx2	nro	1.4.1	Cemu-NX2	TheAJLive / Cemu team	Emulators	Wii U emulator for Switch 2 under kaiHEN. Requires your own games and about 5.5 GiB of homebrew heap. USB drives and SaltyNX are not supported.
 repository	https://github.com/TheAJLive/Cemu-NX2
 file	89892006	2e3faff528d0928bf48c5bd48743d62c31e58a45dd4d5b8fe080804a2c81643d	launcher.nro
@@ -177,10 +155,6 @@ app	sw2ps2	nro	1.1.0	SW2PS2	Rodpad / OunceSX2 contributors	Emulators	Early PlayS
 repository	https://github.com/Rodpad/SW2PS2
 file	43681225	789b7d05fe7aaf3435be4cdd4dc01693edc88bf00f29ed8ec315fce147cb4737	launcher.nro
 github	https://github.com/Rodpad/SW2PS2/releases/download/v1.1.0/sw2ps2.nro
-app	vita3k-nx2	nro	1.4.1	Vita3K-nx2 (davidkalil10)	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.
-repository	https://github.com/davidkalil10/Vita3K-nx2
-file	78472912	d83b43b0a99cb644d83fb596f8c92a1e0a0003a200efbf36a4edefd65e53f52d	launcher.nro
-github	https://github.com/davidkalil10/Vita3K-nx2/releases/download/v1.4.1/Vita3K-switch2.nro
 app	toronja	nro	0.9.37	Toronja (Switch 2)	Olmectron / Azahar and Dekopon contributors	Emulators	Nintendo 3DS emulator fork with Switch 2 rendering improvements and experimental GameShare. Uses the dedicated Switch 2 build; provide your own game dumps. On first launch it can rename /switch/dekopon to /switch/toronja and move existing data; back up that folder if keeping both apps.
 repository	https://github.com/Olmectron/toronja
 file	33451020	8bf2a11853dfa1dcad1f5afe7c13f6f7fb375470283aac9339f4117273283b05	launcher.nro
@@ -237,11 +211,11 @@ app	kaivideo	nro	1.17.0	KaiVideo	mizuiroame	Media	Video player for Switch 2 unde
 repository	https://github.com/mizuiroame/kaivideo
 file	28905570	b0e9236a6899eff2d444a2d9432d1ecc3f2dd55958bf8e86a146302defd1d6bf	launcher.nro
 github	https://github.com/mizuiroame/kaivideo/releases/download/v1.17.0/KaiVideo.nro
-app	vita3k-nx	nro	1.4.3	Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; This is distinct from davidkalil10s fork.
+app	vita3k-nx	nro	1.4.3	Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Vita3K is an experimental PlayStation Vita emulator for Windows, Linux, macOS and Android.
 repository	https://github.com/NaGaa95/Vita3K-nx
 file	81120144	e292bf3819a697d339583c8a035208cb1403b2dad5b87687b7aa3427288cbea1	launcher.nro
 github	https://github.com/NaGaa95/Vita3K-nx/releases/download/1.4.3/Vita3K-NX2.nro
-app	dolphin-nx	nro	1.2.3	Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Separate Dolphin port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own Wii games; This is distinct from MegaCadeDevs fork.
+app	dolphin-nx	nro	1.2.3	Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Dolphin is an emulator for running GameCube and Wii games on Windows, Linux, macOS, and recent Android devices. Its licensed under the terms of the GNU General Public License, version 2 or later (GPLv2+).
 repository	https://github.com/NaGaa95/dolphin-nx
 file	92144300	c90089f92356a2ee6d923a1a7721c4999dd9595cd26f2900d671a0dd2453c1f3	launcher.nro
 github	https://github.com/NaGaa95/dolphin-nx/releases/download/1.2.3/dolphin-nx2.nro
@@ -249,3 +223,15 @@ app	kaireader	nro	1.1.0	KaiReader	mizuiroame	Media	Book and comic reader for Swi
 repository	https://github.com/mizuiroame/kaireader
 file	27048674	bb3c352de5e64712722a85fcdc77e9a44ff97b4263afecf78da8397db2e04923	launcher.nro
 github	https://github.com/mizuiroame/kaireader/releases/download/v1.1.0/KaiReader.nro
+app	local-update-tool	nro	1.0.0	Local Update Tool	AlexTech01	Tools	Homebrew tool for modded Switch 2s running kaiHEN to allow installing game updates from other consoles through "Match Version With Local Users" that would normally be rejected.
+repository	https://github.com/AlexTech01/local-update-tool
+file	551109	a655b66c2b55af798afb3a4eefd65dd77ed6cd21c8f0340f4d63d543fb86c753	launcher.nro
+github	https://github.com/AlexTech01/local-update-tool/releases/download/1.0.0/local-update-tool.nro
+app	iztwins2	nro	0.11.0	IZtwiNS2	IZMYSH	Media	IZtwiNS2 is a standalone Twitch client for Nintendo Switch 2. Browse live channels and categories, watch streams, videos and clips, and read or send Twitch chat from the console.
+repository	https://github.com/byizmysh/IZtwiNS2
+file	65255242	57f64a054b4e6418d3ae394c65b6879e8cbc8a5166c92a9729c93d4ba8c2e767	launcher.nro
+github	https://github.com/byizmysh/IZtwiNS2/releases/download/v0.11.0/IZtwiNS2-0.11.0.nro
+app	cemu-nx	nro	1.3.4	Cemu-NX (GameShare)	NaGaa95	Emulators	IZtwiNS2 This fork runs Cemu on the Nintendo Switch and the Nintendo Switch 2 (kaiHEN).
+repository	https://github.com/NaGaa95/Cemu-nx
+file	152555894	d7bb6842506fab22b5ab7e973b2b7ed3fce4834d05dea9c1684f42541672ed12	launcher.nro
+github	https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.4/cemu-nx2.nro

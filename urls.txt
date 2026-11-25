@@ -9,7 +9,6 @@ https://github.com/Rix565/ouncedonut/releases/download/v1.0/Donut.nro
 https://github.com/Sank-kab/KaiTube/releases/download/v0.0.2-beta/KaiTube-beta0.0.2.nro
 https://github.com/souldbminerr/switch_internal_speakers_nro/releases/download/v1.0.0-ounce/switch_internal_speakers_nro.nro
 https://github.com/davidkalil10/green-nx_switch-2/releases/download/v1.0.31pre1-switch2/green-nx-switch2.nro
-https://github.com/MegaCadeDev/dolphin-nx2/releases/download/v1.0.0/dolphin.nro
 https://github.com/jackspence7/GBA-kaiHEN/releases/download/v1.0.0/mgba.nro
 https://github.com/wowilookgood/kaizhar/releases/download/2126.2-kaizhar3/kaizhar.nro
 https://github.com/souldbminerr/OpenRCT2-Switch/releases/download/v1.0-ounce/openrct2.nro
@@ -38,7 +37,6 @@ https://github.com/BlafKing/KaiDump/releases/download/1.0.5/KaiDump.nro
 https://github.com/davidkalil10/ppsspp-nx2/releases/download/v1.1.9/PPSSPP-switch2.nro
 https://github.com/XITRIX/ppsspp-nx2/releases/download/v0.1.0/PPSSPP-NX2.nro
 https://github.com/Rodpad/SW2PS2/releases/download/v1.1.0/sw2ps2.nro
-https://github.com/davidkalil10/Vita3K-nx2/releases/download/v1.4.1/Vita3K-switch2.nro
 https://github.com/Olmectron/toronja/releases/download/v0.9.37/toronja-switch2.nro
 https://github.com/Olmectron/eden-switch2-poc/releases/download/v0.7.0/eden.nro
 https://github.com/Aster145/JKSV-NS2/releases/download/v1.0.1/JKSV-NS2-1.0.1.nro
@@ -56,4 +54,7 @@ https://github.com/mizuiroame/kaivideo/releases/download/v1.17.0/KaiVideo.nro
 https://github.com/NaGaa95/Vita3K-nx/releases/download/1.4.3/Vita3K-NX2.nro
 https://github.com/NaGaa95/dolphin-nx/releases/download/1.2.3/dolphin-nx2.nro
 https://github.com/mizuiroame/kaireader/releases/download/v1.1.0/KaiReader.nro
+https://github.com/AlexTech01/local-update-tool/releases/download/1.0.0/local-update-tool.nro
+https://github.com/byizmysh/IZtwiNS2/releases/download/v0.11.0/IZtwiNS2-0.11.0.nro
+https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.4/cemu-nx2.nro
 <ignored line>
