@@ -137,7 +137,7 @@ app	nhse	nro	4.2.0	NHSE	sh00kapic / NHSE contributors	Tools	Animal Crossing: New
 repository	https://github.com/sh00kapic/nhse
 file	9690681	06325e61cf5753e972f8126dbaaaaff10c1db0f1ffcf37d9d8b6fa3213320b1d	launcher.nro
 github	https://github.com/sh00kapic/nhse/releases/download/v4.2.0/nhse.nro
-app	kairadio	nro	1.6.0	KaiRadio	mizuiroame	Media	Internet radio player for Switch 2 under kaiHEN. Browse stations and save favourites. Requires a network connection; configuration is stored next to the application.
+app	kairadio	nro	1.6.0	KaiRadio	mizuiroame	Media	Internet radio and podcast player for Switch 2 under kaiHEN. Find stations on a globe, by country, genre or name, and save favourites. Requires a network connection; configuration is stored next to the application.
 repository	https://github.com/mizuiroame/kairadio
 file	21806657	a1b4a69d6382aabd774e4c77a2ca4e99a9290a22ccca22d13e62f6c88857b0b1	launcher.nro
 github	https://github.com/mizuiroame/kairadio/releases/download/v1.6.0/KaiRadio.nro
@@ -233,7 +233,7 @@ app	switch2homebrew-store	nro	0.5.2	Switch 2 Homebrew Store	coldbreathAI	Tools	N
 repository	https://github.com/coldbreathAI/Switch2Homebrew-Store
 file	46272577	bc33efd71e467b810cda71467e5710331e8f35aa780d7acdfc3cd448b0689a2d	launcher.nro
 github	https://github.com/coldbreathAI/Switch2Homebrew-Store/releases/download/v0.5.2/Switch2Homebrew-Store-v0.5.2.nro
-app	kaivideo	nro	1.17.0	KaiVideo	mizuiroame	Media	An open-source video player for Switch 2 running kaiHEN. It plays the videos on your microSD card, in a shared folder on your network (Windows, a NAS, Samba or WebDAV), or on your own Jellyfin, Emby or Plex server. It shows them as a library of films and series, and decodes them with the consoles own hardware decoder. Its a sibling of KaiPlayer and KaiRadio.
+app	kaivideo	nro	1.17.0	KaiVideo	mizuiroame	Media	Video player for Switch 2 under kaiHEN: films and series from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your own Jellyfin, Emby or Plex server, with hardware H.264/VP9/AV1, downloads for offline viewing, Live TV, your own IPTV list and Stremio addons. Nothing is bundled; configuration is stored next to the application.
 repository	https://github.com/mizuiroame/kaivideo
 file	28905570	b0e9236a6899eff2d444a2d9432d1ecc3f2dd55958bf8e86a146302defd1d6bf	launcher.nro
 github	https://github.com/mizuiroame/kaivideo/releases/download/v1.17.0/KaiVideo.nro
@@ -241,7 +241,11 @@ app	vita3k-nx	nro	1.4.3	Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contribu
 repository	https://github.com/NaGaa95/Vita3K-nx
 file	81120144	e292bf3819a697d339583c8a035208cb1403b2dad5b87687b7aa3427288cbea1	launcher.nro
 github	https://github.com/NaGaa95/Vita3K-nx/releases/download/1.4.3/Vita3K-NX2.nro
-app	cemu-nx	nro	1.3.4	cemu-nx (NaGaa95 GameShare)	NaGaa95 / Cemu contributors	Emulators	Separate Cemu port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own WiiU games; This is distinct from TheAJLives fork.
-repository	https://github.com/NaGaa95/Cemu-nx
-file	152555894	d7bb6842506fab22b5ab7e973b2b7ed3fce4834d05dea9c1684f42541672ed12	launcher.nro
-github	https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.4/cemu-nx2.nro
+app	dolphin-nx	nro	1.2.3	Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Separate Dolphin port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own Wii games; This is distinct from MegaCadeDevs fork.
+repository	https://github.com/NaGaa95/dolphin-nx
+file	92144300	c90089f92356a2ee6d923a1a7721c4999dd9595cd26f2900d671a0dd2453c1f3	launcher.nro
+github	https://github.com/NaGaa95/dolphin-nx/releases/download/1.2.3/dolphin-nx2.nro
+app	kaireader	nro	1.1.0	KaiReader	mizuiroame	Media	Book and comic reader for Switch 2 under kaiHEN: your DRM-free EPUB, PDF, CBZ, CBR, FB2, MOBI and TXT from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), plus public-domain books from Project Gutenberg and Standard Ebooks. Configuration is stored next to the application.
+repository	https://github.com/mizuiroame/kaireader
+file	27048674	bb3c352de5e64712722a85fcdc77e9a44ff97b4263afecf78da8397db2e04923	launcher.nro
+github	https://github.com/mizuiroame/kaireader/releases/download/v1.1.0/KaiReader.nro

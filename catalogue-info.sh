@@ -59,7 +59,7 @@ info["switch2now"]='Switch2NOW	davidkalil10 / Blade-Punisher	Media	Native GeForc
 info["sw2snes"]='SW2SNES	Rodpad / Snes9x contributors	Emulators	SNES emulator for Switch 2 using Snes9x, with save states, rewind and shaders. Supply your own games in /roms/snes or select another folder in Settings. Version 1.0.1 is the current published release.'
 info["stremnx2"]='StremNX2	davidkalil10 / denpingus	Media	Unofficial Stremio client using the dedicated Switch 2 build. Requires your own configured add-ons and network access. Launch with full application memory; see the repository for setup.'
 info["nhse"]='NHSE	sh00kapic / NHSE contributors	Tools	Animal Crossing: New Horizons save editor for Switch 2. Close the game before editing; saves are backed up when opened and written when you confirm Save. Includes console and SD save editing; some desktop features are unavailable.'
-info["kairadio"]='KaiRadio	mizuiroame	Media	Internet radio player for Switch 2 under kaiHEN. Browse stations and save favourites. Requires a network connection; configuration is stored next to the application.'
+info["kairadio"]='KaiRadio	mizuiroame	Media	Internet radio and podcast player for Switch 2 under kaiHEN. Find stations on a globe, by country, genre or name, and save favourites. Requires a network connection; configuration is stored next to the application.'
 info["abreloaded"]='Angry Birds Reloaded wrapper	githubuser77777 / aks796	Games	Native Android compatibility wrapper for Angry Birds Reloaded 2.2.16218. Requires your own APK libraries, assets and cursor images in /switch/abreloaded, plus kaiHEN ldr:ro support. This download installs only the wrapper; follow the repository setup guide.'
 info["nxengine-evo"]='NXEngine-evo (Switch 2)	ya-v-ia / NXEngine-evo contributors	Games	Switch 2 port of the open-source NXEngine-evo engine for Cave Story. This entry uses the Ounce build. Follow the repository for game resources and controls; user data is stored relative to the NRO location.'
 info["super-moonlight-nx2"]='Super Moonlight NX2	davidkalil10 / Azkali	Media	Stream PC games from Sunshine over LAN or the built-in Tailscale tunnel. Requires a Sunshine host and kaiHEN 20261114c or newer. Select H.264 in Settings before streaming; the release notes report an AV1 startup issue.'
@@ -86,10 +86,10 @@ info["switch2iptv"]='IPTV Player	davidkalil10	Media	IPTV player for Nintendo Swi
 info["netsurf-switch2"]='NetSurf	davidkalil10	Tools	A port of the NetSurf browser engine to Nintendo Switch 2 (ounce-devkit / libounce + OunceVK) and Nintendo Switch 1 (devkitA64 / libnx). Verified rendering real sites over HTTPS on hardware.'
 info["seedswap"]='SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.'
 info["switch2homebrew-store"]='Switch 2 Homebrew Store	coldbreathAI	Tools	Native homebrew catalog and store for Nintendo Switch 2.'
-info["kaivideo"]='KaiVideo	mizuiroame	Media	An open-source video player for Switch 2 running kaiHEN. It plays the videos on your microSD card, in a shared folder on your network (Windows, a NAS, Samba or WebDAV), or on your own Jellyfin, Emby or Plex server. It shows them as a library of films and series, and decodes them with the consoles own hardware decoder. Its a sibling of KaiPlayer and KaiRadio.'
+info["kaivideo"]='KaiVideo	mizuiroame	Media	Video player for Switch 2 under kaiHEN: films and series from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your own Jellyfin, Emby or Plex server, with hardware H.264/VP9/AV1, downloads for offline viewing, Live TV, your own IPTV list and Stremio addons. Nothing is bundled; configuration is stored next to the application.'
 info["vita3k-nx"]='Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; This is distinct from davidkalil10s fork.'
 info["dolphin-nx"]='Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Separate Dolphin port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own Wii games; This is distinct from MegaCadeDevs fork.'
-info["cemu-nx"]='cemu-nx (NaGaa95 GameShare)	NaGaa95 / Cemu contributors	Emulators	Separate Cemu port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own WiiU games; This is distinct from TheAJLives fork.'
+info["kaireader"]='KaiReader	mizuiroame	Media	Book and comic reader for Switch 2 under kaiHEN: your DRM-free EPUB, PDF, CBZ, CBR, FB2, MOBI and TXT from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), plus public-domain books from Project Gutenberg and Standard Ebooks. Configuration is stored next to the application.'
 
 
 
@@ -141,7 +141,7 @@ if [[ -f "${destination}" ]]; then
 else
 	echo "a file failed to download ${github} stopping execution"; exit
 fi
-if [[ "${bytes}" == "0" ]]; then echo "download failed, check link and try again"; fi
+if [[ "${bytes}" == "0" ]]; then echo "download failed, check link and try again"; exit; fi
 
 if [[ "${name,,}" == "cemu-nx2" ]]; then
 printf "
