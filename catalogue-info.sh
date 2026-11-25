@@ -91,7 +91,7 @@ info["dolphin-nx"]='Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributor
 info["kaireader"]='KaiReader	mizuiroame	Media	Book and comic reader for Switch 2 under kaiHEN: your DRM-free EPUB, PDF, CBZ, CBR, FB2, MOBI and TXT from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), plus public-domain books from Project Gutenberg and Standard Ebooks. Configuration is stored next to the application.'
 info["local-update-tool"]='Local Update Tool	AlexTech01	Tools	Homebrew tool for modded Switch 2s running kaiHEN to allow installing game updates from other consoles through "Match Version With Local Users" that would normally be rejected.'
 info["iztwins2"]='IZtwiNS2	IZMYSH	Media	IZtwiNS2 is a standalone Twitch client for Nintendo Switch 2. Browse live channels and categories, watch streams, videos and clips, and read or send Twitch chat from the console.'
-info["cemu-nx"]='Cemu-NX (GameShare)	NaGaa95	Emulators	IZtwiNS2 This fork runs Cemu on the Nintendo Switch and the Nintendo Switch 2 (kaiHEN).'
+info["cemu-nx"]='Cemu-NX (GameShare)	NaGaa95	Emulators	This fork runs Cemu on the Nintendo Switch and the Nintendo Switch 2 (kaiHEN).'
 
 
 
@@ -165,7 +165,7 @@ printf "
 app	${name,,}	${extension}	${version}	${information}
 repository	${repository}
 file	${bytes}	${sha256sum}	${file}
-github	${github}" >> catalog-new-temp.tsv
+github	${github}" >> catalog-new.tsv
 #echo
 #printf "original version:
 #app	vacootube	iza	1.5.7	VacooTube	IZMYSH	Media	Watch YouTube on Switch 2 with a TV-style interface. Requires VacooTube on a Linux PC and an active IZ2S connection.
@@ -175,7 +175,7 @@ github	${github}" >> catalog-new-temp.tsv
 #"
 
 }
-printf "IZSTORE3" > catalog-new-temp.tsv
+printf "IZSTORE3" > catalog-new.tsv
 while IFS= read -r github; do
     execute
 done < "urls.txt"
