@@ -177,7 +177,7 @@ app	sw2ps2	nro	1.1.0	SW2PS2	Rodpad / OunceSX2 contributors	Emulators	Early PlayS
 repository	https://github.com/Rodpad/SW2PS2
 file	43681225	789b7d05fe7aaf3435be4cdd4dc01693edc88bf00f29ed8ec315fce147cb4737	launcher.nro
 github	https://github.com/Rodpad/SW2PS2/releases/download/v1.1.0/sw2ps2.nro
-app	vita3k-nx2	nro	1.4.1	Vita3K-nx2	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.
+app	vita3k-nx2	nro	1.4.1	MISSING	MISSING
 repository	https://github.com/davidkalil10/Vita3K-nx2
 file	78472912	d83b43b0a99cb644d83fb596f8c92a1e0a0003a200efbf36a4edefd65e53f52d	launcher.nro
 github	https://github.com/davidkalil10/Vita3K-nx2/releases/download/v1.4.1/Vita3K-switch2.nro
@@ -225,10 +225,10 @@ app	netsurf-switch2	nro	3.12-switch2	NetSurf	davidkalil10	Tools	A port of the Ne
 repository	https://github.com/davidkalil10/netsurf-switch2
 file	43937762	251fd5337a45e86e0af63e89a3633964a78e7b1bb06ecc17560d9f009079b13c	launcher.nro
 github	https://github.com/davidkalil10/netsurf-switch2/releases/download/v3.12-switch2/netsurf-switch2.nro
-app	seedswap	nro	0.12.1	SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.
+app	seedswap	nro	0.13.1	SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.
 repository	https://github.com/Hinoaaaaaf212/SeedSwap
-file	1439838	c19ccda8fa01ca740283a29ee4423ab4f3d531a70cef688a682418e0c5dd3430	launcher.nro
-github	https://github.com/Hinoaaaaaf212/SeedSwap/releases/download/v0.12.1/seedswap.nro
+file	1452126	f9fc3457d7bb55c810793ab57112103ffce660a83bc4c7e2b4ffa202b7502bc6	launcher.nro
+github	https://github.com/Hinoaaaaaf212/SeedSwap/releases/download/v0.13.1/seedswap.nro
 app	switch2homebrew-store	nro	0.5.2	Switch 2 Homebrew Store	coldbreathAI	Tools	Native homebrew catalog and store for Nintendo Switch 2.
 repository	https://github.com/coldbreathAI/Switch2Homebrew-Store
 file	46272577	bc33efd71e467b810cda71467e5710331e8f35aa780d7acdfc3cd448b0689a2d	launcher.nro
@@ -237,3 +237,7 @@ app	kaivideo	nro	1.17.0	KaiVideo	mizuiroame	Media	An open-source video player fo
 repository	https://github.com/mizuiroame/kaivideo
 file	28905570	b0e9236a6899eff2d444a2d9432d1ecc3f2dd55958bf8e86a146302defd1d6bf	launcher.nro
 github	https://github.com/mizuiroame/kaivideo/releases/download/v1.17.0/KaiVideo.nro
+app	vita3k-nx2-nagaa95	nro	1.4.3	Vita3K-nx2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.
+repository	https://github.com/NaGaa95/Vita3K-nx
+file	81120144	e292bf3819a697d339583c8a035208cb1403b2dad5b87687b7aa3427288cbea1	launcher.nro
+github	https://github.com/NaGaa95/Vita3K-nx/releases/download/1.4.3/Vita3K-NX2.nro

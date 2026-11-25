@@ -19,7 +19,7 @@ app_replacements["abreloaded_nx2"]='abreloaded'
 app_replacements["ounce-nxengine-evo"]='nxengine-evo'
 app_replacements["switch2-gamevault"]='game-vault'
 app_replacements["punktfunk-client-switch2"]='punktfunk'
-app_replacements["ppsspp-nx2"]='PPSSPP-Replace' # special case
+#app_replacements["ppsspp-nx2"]='PPSSPP-Replace' # special case
 app_replacements["eden-switch2-poc"]='eden'
 app_replacements["pkforge-switch2"]='pkforge'
 
@@ -69,7 +69,8 @@ info["kaidump"]='KaiDump	BlafKing	Tools	Export your installed games, updates, DL
 info["ppsspp-davidkalil"]='PPSSPP (davidkalil10)	davidkalil10 / PPSSPP contributors	Emulators	PSP emulator port for Switch 2 with Vulkan and kaiHEN JIT. Supply your own games and launch with full application memory. This is davidkalil10s fork; the separate XITRIX fork adds experimental GameShare. Optional frame generation needs your own Lossless.dll.'
 info["ppsspp-xitrix"]='PPSSPP (XITRIX GameShare)	XITRIX / PPSSPP contributors	Emulators	Separate PPSSPP port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSP games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.'
 info["sw2ps2"]='SW2PS2	Rodpad / OunceSX2 contributors	Emulators	Early PlayStation 2 emulator for Switch 2 under kaiHEN, based on OunceSX2. Supply your own BIOS in /bios/ps2 and game dumps in /roms/ps2, or configure other folders. Includes per-game settings, save states and experimental Multitap support.'
-info["vita3k-nx2"]='Vita3K-nx2	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.'
+info["vita3k-nx2-davidkalil"]='Vita3K-nx2 (davidkalil10)	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.'
+info["vita3k-nx2-nagaa95"]='Vita3K-nx2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.'
 info["toronja"]='Toronja (Switch 2)	Olmectron / Azahar and Dekopon contributors	Emulators	Nintendo 3DS emulator fork with Switch 2 rendering improvements and experimental GameShare. Uses the dedicated Switch 2 build; provide your own game dumps. On first launch it can rename /switch/dekopon to /switch/toronja and move existing data; back up that folder if keeping both apps.'
 info["eden"]='Eden (Switch 2 PoC)	Olmectron / Eden contributors	Emulators	Experimental Switch 1 emulator running on Switch 2 under kaiHEN. Supply your own games and keys in /switch/eden/.local/share/eden/keys/. Expect crashes, stutter and missing graphics; one player, no touch or guest networking. No games, keys or firmware are included.'
 info["jksv-ns2"]='JKSV-NS2	Aster145 / J-D-K (JK)	Tools	Save manager port for Switch 2 under kaiHEN. Back up and restore saves; backups are stored in /JKSV/. Close games before restoring. The interface defaults to Simplified Chinese; English and Japanese are available in Settings after restarting.'
@@ -106,9 +107,13 @@ echo "repobase: ${repobase}"
 dev="${repobase%\/*}" #before
 name="${repobase#*\/}" #after
 test ${app_replacements[${name,,}]+_} && name="${app_replacements[${name,,}]}" # check if a manual override exists
-if [[ "${name}" == "PPSSPP-Replace" ]]; then
+if [[ "${name}" == "ppsspp-nx2" ]]; then
 	if [[ "${dev}" == "davidkalil10" ]]; then name="ppsspp-davidkalil"; fi
 	if [[ "${dev}" == "XITRIX" ]]; then name="ppsspp-xitrix"; fi
+fi
+if [[ "${name}" == "Vita3K-nx" ]]; then
+	if [[ "${dev}" == "davidkalil10" ]]; then name="vita3k-nx2-davidkalil"; fi
+	if [[ "${dev}" == "NaGaa95" ]]; then name="vita3k-nx2-nagaa95"; fi
 fi
 echo "dev: ${dev}"
 echo "name: ${name}"
