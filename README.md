@@ -1,1 +1,1 @@
-IMPORTANT NOTE, THIS IS AN EXAMPLE, FOR THE ACTUAL CATALOGUE USE [https://raw.githubusercontent.com/dadadush/switch2-homebrew-catalog/main/catalog/catalog-new.tsv](https://raw.githubusercontent.com/dadadush/switch2-homebrew-catalog/main/catalog/catalog-new.tsv) INSTEAD
+IMPORTANT NOTE, THIS IS AN EXAMPLE, FOR THE ACTUAL CATALOGUE USE [https://raw.githubusercontent.com/MarioMasta64/switch2-homebrew-catalog/main/catalog/catalog-new.tsv](https://raw.githubusercontent.com/MarioMasta64/switch2-homebrew-catalog/main/catalog/catalog-new.tsv) INSTEAD
