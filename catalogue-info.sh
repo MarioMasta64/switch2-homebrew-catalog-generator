@@ -69,8 +69,7 @@ info["kaidump"]='KaiDump	BlafKing	Tools	Export your installed games, updates, DL
 info["ppsspp-davidkalil"]='PPSSPP (davidkalil10)	davidkalil10 / PPSSPP contributors	Emulators	PSP emulator port for Switch 2 with Vulkan and kaiHEN JIT. Supply your own games and launch with full application memory. This is davidkalil10s fork; the separate XITRIX fork adds experimental GameShare. Optional frame generation needs your own Lossless.dll.'
 info["ppsspp-xitrix"]='PPSSPP (XITRIX GameShare)	XITRIX / PPSSPP contributors	Emulators	Separate PPSSPP port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSP games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.'
 info["sw2ps2"]='SW2PS2	Rodpad / OunceSX2 contributors	Emulators	Early PlayStation 2 emulator for Switch 2 under kaiHEN, based on OunceSX2. Supply your own BIOS in /bios/ps2 and game dumps in /roms/ps2, or configure other folders. Includes per-game settings, save states and experimental Multitap support.'
-info["vita3k-nx2-davidkalil"]='Vita3K-nx2 (davidkalil10)	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.'
-info["vita3k-nx2-nagaa95"]='Vita3K-nx2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; see upstream for supported GameShare setup. This is distinct from davidkalil10s fork.'
+info["vita3k-nx2"]='Vita3K-nx2 (davidkalil10)	davidkalil10 / Vita3K contributors	Emulators	Experimental PS Vita emulator for Switch 2 using Vulkan and kaiHEN JIT. Launch with full application memory. Install firmware and fonts using the launcher or the upstream manual procedure; supply your own games and required licenses. Firmware and game data are not included.'
 info["toronja"]='Toronja (Switch 2)	Olmectron / Azahar and Dekopon contributors	Emulators	Nintendo 3DS emulator fork with Switch 2 rendering improvements and experimental GameShare. Uses the dedicated Switch 2 build; provide your own game dumps. On first launch it can rename /switch/dekopon to /switch/toronja and move existing data; back up that folder if keeping both apps.'
 info["eden"]='Eden (Switch 2 PoC)	Olmectron / Eden contributors	Emulators	Experimental Switch 1 emulator running on Switch 2 under kaiHEN. Supply your own games and keys in /switch/eden/.local/share/eden/keys/. Expect crashes, stutter and missing graphics; one player, no touch or guest networking. No games, keys or firmware are included.'
 info["jksv-ns2"]='JKSV-NS2	Aster145 / J-D-K (JK)	Tools	Save manager port for Switch 2 under kaiHEN. Back up and restore saves; backups are stored in /JKSV/. Close games before restoring. The interface defaults to Simplified Chinese; English and Japanese are available in Settings after restarting.'
@@ -88,6 +87,9 @@ info["netsurf-switch2"]='NetSurf	davidkalil10	Tools	A port of the NetSurf browse
 info["seedswap"]='SeedSwap	Hinoaaaaaf212	Tools	SeedSwap lets you play Switch 1 games on a Switch 2 by running them in place of Seedsow Lullaby or another installed Switch 1 game.'
 info["switch2homebrew-store"]='Switch 2 Homebrew Store	coldbreathAI	Tools	Native homebrew catalog and store for Nintendo Switch 2.'
 info["kaivideo"]='KaiVideo	mizuiroame	Media	An open-source video player for Switch 2 running kaiHEN. It plays the videos on your microSD card, in a shared folder on your network (Windows, a NAS, Samba or WebDAV), or on your own Jellyfin, Emby or Plex server. It shows them as a library of films and series, and decodes them with the consoles own hardware decoder. Its a sibling of KaiPlayer and KaiRadio.'
+info["vita3k-nx"]='Vita3K-NX2 (NaGaa95 GameShare)	NaGaa95 / Vita3K contributors	Emulators	Separate Vita3K port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own PSVita games; This is distinct from davidkalil10s fork.'
+info["dolphin-nx"]='Dolphin-NX (NaGaa95 GameShare)	NaGaa95 / Dolphin contributors	Emulators	Separate Dolphin port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own Wii games; This is distinct from MegaCadeDevs fork.'
+info["cemu-nx"]='cemu-nx (NaGaa95 GameShare)	NaGaa95 / Cemu contributors	Emulators	Separate Cemu port for Switch 2 under kaiHEN. Includes experimental GameShare for local multiplayer with a second, unmodified Switch. Supply your own WiiU games; This is distinct from TheAJLives fork.'
 
 
 
@@ -110,10 +112,6 @@ test ${app_replacements[${name,,}]+_} && name="${app_replacements[${name,,}]}" #
 if [[ "${name}" == "ppsspp-nx2" ]]; then
 	if [[ "${dev}" == "davidkalil10" ]]; then name="ppsspp-davidkalil"; fi
 	if [[ "${dev}" == "XITRIX" ]]; then name="ppsspp-xitrix"; fi
-fi
-if [[ "${name}" == "Vita3K-nx" ]]; then
-	if [[ "${dev}" == "davidkalil10" ]]; then name="vita3k-nx2-davidkalil"; fi
-	if [[ "${dev}" == "NaGaa95" ]]; then name="vita3k-nx2-nagaa95"; fi
 fi
 echo "dev: ${dev}"
 echo "name: ${name}"
@@ -143,6 +141,7 @@ if [[ -f "${destination}" ]]; then
 else
 	echo "a file failed to download ${github} stopping execution"; exit
 fi
+if [[ "${bytes}" == "0" ]]; then echo "download failed, check link and try again"; fi
 
 if [[ "${name,,}" == "cemu-nx2" ]]; then
 printf "

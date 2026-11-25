@@ -54,4 +54,5 @@ https://github.com/Hinoaaaaaf212/SeedSwap/releases/download/v0.13.1/seedswap.nro
 https://github.com/coldbreathAI/Switch2Homebrew-Store/releases/download/v0.5.2/Switch2Homebrew-Store-v0.5.2.nro
 https://github.com/mizuiroame/kaivideo/releases/download/v1.17.0/KaiVideo.nro
 https://github.com/NaGaa95/Vita3K-nx/releases/download/1.4.3/Vita3K-NX2.nro
+https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.4/cemu-nx2.nro
 <ignored line>
